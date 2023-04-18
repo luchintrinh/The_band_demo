@@ -1,0 +1,464 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#wrapper{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+#header .search_item{
+    float: right;
+    color: #fff;
+    line-height:46px;
+    padding:0 21px;
+    font-size: 16px;
+}
+
+#header .search_item:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#header .phone{
+    display: none;
+}
+
+
+#nav li{
+    position: relative;
+}
+
+#nav >li{
+    display: inline-block;
+    line-height: 46px;
+    color: white;
+}
+
+#nav li a{
+    color: white;
+    text-decoration: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: inline-block;
+}
+
+#nav >li:hover >a{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav{
+    width: 160px;
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav .subnav li{
+    list-style-type: none;
+}
+
+#nav .subnav li a{
+    display: block;
+    color: black;
+}
+
+#nav .subnav li:hover a{
+    background-color: #ccc;
+}
+
+#nav>li:hover .subnav{
+    display: block;
+}
+
+#slider{
+  width: 100%;
+  padding-top: 50%;
+  background-color: rgb(181, 111, 111);
+  margin-top: 46px;
+  background: url(../img/chicago.jpg) top center / cover no-repeat;
+  position: relative;
+  z-index: -1;
+}
+#slider #discription{
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#content{
+}
+
+#content .box-content{
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: auto;
+}
+
+#content #band{
+    margin-bottom: 112px;
+    
+}
+
+
+#content .box-content .paragraph{
+    text-align: justify;
+}
+
+#content .name, #content .title, #content .paragraph{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .name{
+    padding-top: 64px;
+    margin-bottom: 25px;
+}
+
+#content .title{
+    padding-bottom: 25px;
+}
+#content .paragraph{
+    margin-top: 25px;
+}
+
+#content .row{
+    /* width: 768px; */
+    max-width: 100%;
+    margin-top: 32px;
+    height: 250px;
+}
+#content .row_ticket{
+    height: 500px;
+}
+
+#content .row .memberList{
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+    padding-bottom: 112px;
+}
+
+#content .memberList .buyTicket{
+    text-align: left;
+}
+
+#content .row .memberList img{
+    width: 181px;
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+#content .row .memberList .buyTicket{
+    width: 95%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+}
+
+#content .row .memberList .buyTicket .some{
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+#content .row .memberList .buyTicket .text_infor{
+
+}
+
+#content .row .memberList .buyTicket .buy{
+    padding: 8px 16px;
+    color: white;
+    background-color: #000;
+    margin-top: 10px;
+    border: none;
+}
+
+#content .row .memberList .buyTicket .buy:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+#content #tour .memberList img{
+    width: 95%;
+}
+
+#content .information{
+    list-style-type: none;
+    margin-top: 40px;
+    text-align: left;
+    background-color: white;
+}
+
+#content .information li{
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+}
+
+#content .information .label{
+    background-color: #f44336;
+    color: white;
+    padding: 3px;
+}
+
+#content .information  .fail{
+    color: white;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#content .box_tour{
+    padding: 25px 16px 112px 16px;
+    background-color: #000;
+}
+
+#content #tour{
+    height: auto;
+    width: 768px;
+    background-color: #000;
+}
+
+#content .box_contact{
+    margin-top: 40px;
+    height: 100px;
+}
+
+#content .box_tour .name, 
+#content .box_tour .title{
+    background-color: #000;
+    color: white;
+    display: block;
+}
+
+#content #contact{
+    margin-bottom: 150px;
+}
+
+#content #contact .contact_infor{
+    float: left;
+}
+
+#content #contact .form_contact{
+    float: right;
+}
+
+#content #contact .form_contact input{
+    height: 35px;
+    padding: 5px;
+}
+
+#content #contact .form_contact .top_contact{
+    margin-bottom: 10px;
+}
+
+#content #contact .form_contact .bottom_contact input{
+    width: 100%;
+}
+
+#content #contact .contact_detail{
+    text-align: left;
+}
+
+#content #contact .contact_detail i{
+    padding-right: 10px;
+    line-height: 20px;
+}
+
+#content .submit{
+    padding: 8px 16px;
+    background-color: #000;
+    color: white;
+    float: right;
+    border-color: transparent;
+}
+
+#content .submit:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#content #map{
+    
+    width: 100%;
+    padding-top: 56.28%;
+    background: url(../img/map.jpg) top center / cover no-repeat;
+}
+
+#footer{
+    
+}
+
+#footer .box_icon{
+    text-align: center;
+}
+
+#footer .box_icon li{
+    display: inline-block;
+}
+
+#footer .box_icon li i,
+#footer .box_icon p{
+    opacity: 0.5;
+}
+
+#footer .box_icon li i{
+    font-size: 25px;
+    padding-top: 64px;
+    padding-bottom: 25px;
+}
+
+#footer .box_icon li i:hover{
+    opacity: 0.3;
+}
+
+#footer .box_icon p{
+    padding-bottom: 64px;
+}
+
+.pay{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.pay.open{
+    display: flex;
+}
+
+.pay .box_pay{
+    height: 471.5px;
+    width: 900px;
+    background-color: white;
+}
+
+.pay #pay_header{
+    width: 100%;
+    height: 97px;
+    background-color: #009688!important;
+    text-align: center;
+    line-height:97px;
+    position: relative;
+}
+
+.pay #pay_header h1{
+    
+}
+
+.pay #pay_header .exit{
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+    float: right;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+
+.pay #pay_header .exit:hover{
+    background-color: #ccc;
+    cursor: pointer;
+    color: #000;
+}
+
+.pay #pay_input p{
+    margin: 15px 0;
+    padding-left: 15px;
+}
+
+.pay #pay_input input{
+    padding: 8px;
+    margin-left: 15px;
+    width: 850.4px;
+    height: 40px;
+}
+
+.pay #pay_input .pay_submit{
+    width: 850.4px;
+    color: #fff;
+    background-color: #009688;
+    text-align: center;
+    line-height: 35px;
+    border: 2px solid transparent;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.pay #pay_input .pay_submit:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.pay #pay_input .pay_close{
+    margin-left: 15px;
+    width: 100px;
+    margin-top: 40px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 12px;
+}
+
+.pay #pay_input .help{
+    float: right;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.pay #pay_input .close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* xử lí css khi lỗi nhập form */
+.invalid{
+    color:#f44336;
+    border: 1px solid #f44336;
+    outline: none;
+}
+
+
+

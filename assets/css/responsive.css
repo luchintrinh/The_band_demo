@@ -1,0 +1,138 @@
+@media (max-width:768px) and (min-width:600px){
+    #content .row{
+        width: 100%;
+    }
+    #content .box_contact{
+        width: 600px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    #content .submit{
+        margin-right: 84px;
+    }
+    .pay .box_pay{
+        width: 600px;
+    }
+    .pay #pay_input input{
+        width: 89%;
+    }
+
+    
+    .pay #pay_input .pay_submit{
+        width: 89%;
+    }
+    .pay #pay_input .help{
+        margin-right: 50px;
+    }
+}
+@media (min-width:375px) and (max-width:600px){
+    html{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    #content #tour{
+        width:100%;
+    }
+    #header .search_item{
+        display: none;
+    }
+    #content .box-content{
+        width:100%;
+    }
+    #nav{
+        background-color: black;
+        width: 100%;
+        overflow: hidden;
+        height: 46px;
+    }
+
+    #header .openmenu{
+        height: auto;
+        overflow: auto;
+    }
+
+    #header .phone{
+        color: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 46px;
+        padding: 0 20px;
+        z-index: 101;
+    }
+    #nav >li{
+        display: block;
+    }
+    #slider #discription{
+        display: none;
+    }
+    #content #contact{
+        margin-bottom: 50px;
+    }
+    #content .row .memberList img{
+        width: 100%;
+    }
+    #content .box_contact{
+        width: 100%;
+        height: 230px;
+        text-align: center;
+    }
+    #content .box_contact .contact_infor{
+        float: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+    }
+    #content .box_contact .form_contact{
+        float: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        z-index: -10;
+    }
+    #content #contact .form_contact .top_contact input{
+        position: relative;
+        z-index: -10;
+        width: 100%;
+    }
+    #content #contact .form_contact .top_contact input:first-child{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    #content .submit{
+        float: none;
+        display: block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    #content .row{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+    #content .row .memberList{
+        width: 50%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 20px;
+    }
+    #content .row_ticket .memberList{
+        width: 85%;
+    }
+
+    .pay .box_pay{
+        width: 80%;
+    }
+    .pay #pay_input input{
+        width: 89%;
+    }
+
+    
+    .pay #pay_input .pay_submit{
+        width: 89%;
+    }
+
+} 
